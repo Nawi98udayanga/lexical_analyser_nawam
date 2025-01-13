@@ -1,0 +1,5 @@
+bison -y -d nawamUdayanga.y
+flex nawamUdayanga.l
+gcc -c y.tab.c lex.yy.c
+gcc y.tab.o lex.yy.o -o nawamUdayanga
+nawamUdayanga
