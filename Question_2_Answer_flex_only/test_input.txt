@@ -1,0 +1,31 @@
+// Test Case 1: Valid Tokens
+var x: integer;
+func main() -> void {
+    x = 42;       // Assignment with integer
+    y = 3.14;     // Assignment with float
+    z = 5.5e-3;   // Scientific notation
+    return;
+}
+
+/* Test Case 2: Reserved Words and Operators */
+if (a < b and b >= c or not d) then {
+    x = x + y * z / w;
+    return;
+}
+
+// Test Case 3: Unrecognized and Invalid Tokens
+123abc             // Invalid identifier starting with a number
+1.2.3              // Invalid floating-point number
+/* Unclosed block comment
+
+func foo() -> integer {
+    return 10;
+}
+
+// Test Case 4: Special Cases
+a = 5..10;         // Invalid range or double dot
+read(x);           // Valid read function
+write(a * b + c);  // Valid write function
+
+// Test Case 5: Edge Cases
+"Unrecognized string literal
